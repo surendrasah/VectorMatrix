@@ -1,0 +1,6 @@
+﻿  Main.cpp
+c:\users\ssah\source\repos\vectormatrix\vectormatrix\main.cpp(102): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\ssah\source\repos\vectormatrix\vectormatrix\main.cpp(113): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\ssah\source\repos\vectormatrix\vectormatrix\main.cpp(123): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\ssah\source\repos\vectormatrix\vectormatrix\main.cpp(133): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  VectorMatrix.vcxproj -> C:\Users\ssah\source\repos\VectorMatrix\x64\Debug\VectorMatrix.exe
