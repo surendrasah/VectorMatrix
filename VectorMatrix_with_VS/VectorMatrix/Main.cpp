@@ -35,7 +35,7 @@ int main()
 	double scalar;
 
 	//lets ask user to enter choice for operations
-	char operation_choice;
+	double operation_choice;//to take care of decimal value
 	std::cout << "Please enter the choice for different operation for Matrix and Vector\n";
 
 	do
@@ -51,14 +51,14 @@ int main()
 		std::cout << "7) Two vector Addition\n";
 		std::cout << "8) Do not want to perform any operations and please terminate the program\n";
 		std::cin >> operation_choice;
-	} while (operation_choice != '1' && operation_choice != '2' &&
-		operation_choice != '3' && operation_choice != '4' && operation_choice != '5' && operation_choice != '6' 
-		&& operation_choice != '7' && operation_choice != '8');
+	} while (operation_choice != 1 && operation_choice != 2 &&
+		operation_choice != 3 && operation_choice != 4 && operation_choice != 5 && operation_choice != 6 
+		&& operation_choice != 7 && operation_choice != 8);
 
 	std::cin.ignore(32767, '\n');
 
 	// matrix multipication with vector
-	if (operation_choice == '1')
+	if (operation_choice == 1)
 	{	
 
 		operationobj.matMulVect(mat, vec);
@@ -66,7 +66,7 @@ int main()
 	}
 
 	//scalar multiplication with matrix
-	else if (operation_choice == '2')
+	else if (operation_choice == 2)
 	{
 		
 
@@ -78,7 +78,7 @@ int main()
 
 
 	//scalar addition with matrix
-	else if (operation_choice == '3')
+	else if (operation_choice == 3)
 	{
 		
 		std::cout << "You choose the Scalar elements for addition with Matrix\n";
@@ -88,7 +88,7 @@ int main()
 	}
 
 	//scalar multiplication with Vector
-	else if (operation_choice == '4')
+	else if (operation_choice == 4)
 	{
 
 		std::cout << "You choose the Scalar elements for multiplying with Vector\n";
@@ -98,7 +98,7 @@ int main()
 	}
 
 	//scalar addition with Vector
-	else if (operation_choice == '5')
+	else if (operation_choice == 5)
 	{
 
 		std::cout << "You choose the Scalar elements for addition with Vector\n";
@@ -108,7 +108,7 @@ int main()
 	}
 
 	//addition with matrices
-	else if (operation_choice == '6')
+	else if (operation_choice == 6)
 	{
 		std::cout << "You choose the addition with matrices\n";
 		std::vector<std::vector<double> > mat2;
@@ -126,7 +126,7 @@ int main()
 	}
 
 	//addition with two Vectors
-	else if (operation_choice == '7')
+	else if (operation_choice == 7)
 	{
 
 		std::vector<double> vec2;
